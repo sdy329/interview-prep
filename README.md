@@ -1020,7 +1020,7 @@ A non-relational database with a document-based design that uses flexible schema
 
 <summary>Answer</summary>
 
-- SQL databases are relational databases that use SQL syntax and a tabular design. NoSQL databases are non-relational databases that use a document-based design and flexible schemas. 
+- SQL databases are relational databases that use SQL syntax and a tabular design. NoSQL databases are non-relational databases that use a document-based design and flexible schemas.
 - SQL databases are good for multi-row transactions and applications with stable data requirements. NoSQL databases are good for applications with large amounts of data and applications with changing data requirements.
 - SQL databases are vertically scalable, while NoSQL databases are horizontally scalable.
 - SQL databases run in memory, while NoSQL databases run on disk/are file based.
