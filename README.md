@@ -33,11 +33,20 @@
     - [What is a constructor?](#what-is-a-constructor)
   - [SOLID Questions](#solid-questions)
     - [What is SOLID?](#what-is-solid)
+    - [Why is SOLID important?](#why-is-solid-important)
     - [What is the Single Responsibility Principle?](#what-is-the-single-responsibility-principle)
     - [What is the Open/Closed Principle?](#what-is-the-openclosed-principle)
     - [What is the Liskov Substitution Principle?](#what-is-the-liskov-substitution-principle)
     - [What is the Interface Segregation Principle?](#what-is-the-interface-segregation-principle)
     - [What is the Dependency Inversion Principle?](#what-is-the-dependency-inversion-principle)
+  - [Database Questions](#database-questions)
+    - [What are the main 3 types of databases?](#what-are-the-main-3-types-of-databases)
+    - [What is a SQL database?](#what-is-a-sql-database)
+    - [What is a SQLite database?](#what-is-a-sqlite-database)
+    - [What is a NoSQL database?](#what-is-a-nosql-database)
+    - [What are the key differences between SQL and NoSQL databases?](#what-are-the-key-differences-between-sql-and-nosql-databases)
+    - [What is indexing in databases?](#what-is-indexing-in-databases)
+    - [What is the difference between indexing in SQL and NoSQL databases?](#what-is-the-difference-between-indexing-in-sql-and-nosql-databases)
 
 ## OOP Questions
 
@@ -564,6 +573,16 @@ SOLID is a set of five principles that are designed to make software designs mor
 
 </details>
 
+### Why is SOLID important?
+
+<details>
+
+<summary>Answer</summary>
+
+The purpose of SOLID principles is to explore different design approaches that allow software engineers and developers to tackle problematic design patterns. By working with the SOLID principles, they can build software programs that are adaptive, agile and effective. While following the SOLID principles can increase the time and effort required for the software development, it can also ensure that the resulting code is easy to read, test, maintain and extend.
+
+</details>
+
 ### What is the Single Responsibility Principle?
 
 <details>
@@ -944,5 +963,86 @@ Good:
         }
     }
     ```
+
+</details>
+
+## Database Questions
+
+### What are the main 3 types of databases?
+
+<details>
+
+<summary>Answer</summary>
+
+MySQL, SQlite, and NoSQL
+
+<details>
+
+<summary>Disclaimer</summary>
+
+There are many more types of databases, but these are the main 3 I have encountered in jobs and cover the most common types.
+
+</details></details>
+
+### What is a SQL database?
+
+<details>
+
+<summary>Answer</summary>
+
+A relational database management system (RDBMS) that uses SQL syntax and a tabular design. SQL is good for multi-row transactions and applications with stable data requirements. It is vertically scalable and runs in memory.
+
+</details>
+
+### What is a SQLite database?
+
+<details>
+
+<summary>Answer</summary>
+
+A serverless relational database management system (RDBMS) that uses SQL syntax and a file-based design. SQLite is good for small applications and mobile applications. It also only allows only one write operation at a time.
+
+</details>
+
+### What is a NoSQL database?
+
+<details>
+
+<summary>Answer</summary>
+
+A non-relational database with a document-based design that uses flexible schemas. NoSQL is good for applications with large amounts of data and applications with changing data requirements. They are typically document-based, key-value, or graph-based.
+
+</details>
+
+### What are the key differences between SQL and NoSQL databases?
+
+<details>
+
+<summary>Answer</summary>
+
+- SQL databases are relational databases that use SQL syntax and a tabular design. NoSQL databases are non-relational databases that use a document-based design and flexible schemas. 
+- SQL databases are good for multi-row transactions and applications with stable data requirements. NoSQL databases are good for applications with large amounts of data and applications with changing data requirements.
+- SQL databases are vertically scalable, while NoSQL databases are horizontally scalable.
+- SQL databases run in memory, while NoSQL databases run on disk/are file based.
+
+</details>
+
+### What is indexing in databases?
+
+<details>
+
+<summary>Answer</summary>
+
+Indexing is the process of creating an index on a table in a database. This index is used to speed up the retrieval of rows from the table. Indexing is done on columns that are frequently used in queries.
+
+</details>
+
+### What is the difference between indexing in SQL and NoSQL databases?
+
+<details>
+
+<summary>Answer</summary>
+
+SQL uses a B-tree index which employs a hierarchical structure to store data. In contrast, NoSQL uses a hash index, which stores data in a key-value store.
 
 </details>
