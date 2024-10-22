@@ -31,6 +31,7 @@
     - [How much memory does a class take up?](#how-much-memory-does-a-class-take-up)
     - [Is it necessary to create an object of a class to access its static members?](#is-it-necessary-to-create-an-object-of-a-class-to-access-its-static-members)
     - [What is a constructor?](#what-is-a-constructor)
+    - [What is Dependency Injection?](#what-is-dependency-injection)
   - [SOLID Questions](#solid-questions)
     - [What is SOLID?](#what-is-solid)
     - [Why is SOLID important?](#why-is-solid-important)
@@ -557,6 +558,41 @@ Example:
     }
 
     let person = new Person('Spencer', 23);
+    ```
+
+</details>
+
+### What is Dependency Injection?
+
+<details>
+
+<summary>Answer</summary>
+
+Dependency Injection is a design pattern that is used to remove the dependency of a class on another class. It is used to inject the dependency of one class into another class.
+
+Example:
+
+    ```javascript
+    class Database {
+        save(data: any) {
+            console.log('Data saved to database');
+        }
+    }
+
+    class User {
+        private _database: Database;
+
+        constructor(database: Database) {
+            this.database = database;
+        }
+
+        saveData(data: any) {
+            this.database.save(data);
+        }
+    }
+
+    let database = new Database();
+    let user = new User(database);
     ```
 
 </details>
